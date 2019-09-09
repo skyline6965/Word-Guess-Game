@@ -1,0 +1,48 @@
+
+
+
+
+
+body {
+    width: 960px;
+    background-color: darkslategray;
+    text-align: center;
+    box-sizing: border-box;    
+    margin: auto;
+    font-family: fantasy;
+
+
+
+}
+
+.gamebox {
+    width: 960px;
+    height: 650px;
+    background-color: rgba(138, 68, 68, 0.938);
+    text-align: center;
+    margin: auto;
+
+
+}
+
+.guessBox {
+    width: 400px;
+    height: 600px;
+    border-style: ridge;
+    float: left;
+    margin: 30px 0 0 30px;
+}
+
+.answerBox {
+    width: 400px;
+    height: 600px;
+    border-style: ridge;
+    float: right;
+    margin: 30px 30px 0 0;
+
+}
+
+h1 {
+    font-family: monospace;
+    font-size: 80px;
+}
