@@ -6,9 +6,10 @@ var choosenWord = wordList[randNum];
 var correctWord = [];
 var wrongWord = [];
 var underScore = []; 
-
+var wins = [];
 var docUnderScore = document.getElementsByClassName("answers"); 
 // ^^^^ used getElementbyID, and was unsuccessful. Changed the HTML and the JS to "Class Name" and worked. Whats the difference??
+var docLttrsGuessed = document.getElementsByClassName("userGuess");
 
 
 // console.log(randNum);
@@ -34,8 +35,10 @@ document.addEventListener('keypress', (event) => {
         
         underScore[choosenWord.indexOf(keyword)] = keyword;
         docUnderScore[0].innerHTML = underScore.join(' ');
+        docLttrsGuessed[0].innerHTML = correctWord;
             if(underScore.join('') == choosenWord) {
-                alert("You Win");
+                alert('You win');
+                // document.getElementsByClassName('wins').innerHTML = "Wins: " + i++;
             }
     }
     else {wrongWord.push(keyword);
